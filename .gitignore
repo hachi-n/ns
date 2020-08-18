@@ -1,0 +1,5 @@
+pkg
+.idea
+.envrc
+config/application.yml
+.config
