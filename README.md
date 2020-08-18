@@ -1,5 +1,10 @@
 # pigeon
-pigeon is a simple message library.
+Pigeon is a simple message notification system.
+Pegeon's Command Line Interface is a single binary
+In other words, just deploy the built program.
+Not only that, this program is also available as a library.
+
+If you have a request for the notification function, please create an Issue.
 
 ## HOW TO INSTALL?
 ### When used as a Command
