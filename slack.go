@@ -31,13 +31,14 @@ func NewSlack(message, url, channel, messenger, iconEmoji, iconUrl string) *Slac
 }
 
 func (s *Slack) MarshalJSON() ([]byte, error) {
-	marshalStruct := struct {
-		channel   string
-		username  string
-		text      string
-		iconEmoji string
-		iconUrl   string
-	}{s.channel,
+	marshalStruct := &struct {
+		Channel   string `json:"channel"`
+		Username  string `json:"username"`
+		Text      string `json:"text"`
+		IconEmoji string `json:"icon_emoji,omitempty"`
+		IconUrl   string `json:"icon_url,omitempty"`
+	}{
+		s.channel,
 		s.messenger,
 		s.message,
 		s.icon.emoji,
@@ -67,6 +68,6 @@ func (s *Slack) Notify() error {
 		return err
 	}
 
-	fmt.Println(body)
+	fmt.Println(string(body))
 	return nil
 }

@@ -1,6 +1,6 @@
 slack:
-  url:        ""
-  channel:    ""
-  messenger:  ""
-  iconEmoji:  ""
-  iconUrl:    ""
+  url:         ""
+  channel:     ""
+  messenger:   ""
+  icon_emoji:  ""
+  icon_url:    ""

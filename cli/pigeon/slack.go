@@ -29,7 +29,7 @@ func slackCommand() *cli.Command {
 				yml.Slack.IconEmoji,
 				yml.Slack.IconUrl,
 			)
-			return pigeon.Deliver(slack)
+			return pigeon.Throw(slack)
 		},
 	}
 }

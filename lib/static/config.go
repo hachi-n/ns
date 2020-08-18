@@ -8,11 +8,11 @@ import (
 
 type ApplicationYaml struct {
 	Slack struct {
-		Url       string
-		Channel   string
-		Messenger string
-		IconEmoji string
-		IconUrl   string
+		Url       string `yaml:"url"`
+		Channel   string `yaml:"channel"`
+		Messenger string `yaml:"messenger"`
+		IconEmoji string `yaml:"icon_emoji"`
+		IconUrl   string `yaml:"icon_url"`
 	}
 }
 
