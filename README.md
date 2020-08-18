@@ -2,7 +2,12 @@
 pigeon is a simple message library.
 
 ## HOW TO INSTALL?
-### Please Exec Command
+### When used as a Command
+#### Download
+``` 
+git clone git@github.com:hachi-n/pigeon.git
+``` 
+#### Setup commands.
 ```
 cp -pr config/application.yml.sample config/application.yml
 vim config/application.yml
@@ -20,6 +25,11 @@ cd ./installer
 ```
 
 * Will be set `/usr/local/bin/pegion`
+
+### When used as a Library
+```
+go get github.com/hachi-n/pigeon
+```
 
 ## HOW TO USE?
 ### When used as a Command
