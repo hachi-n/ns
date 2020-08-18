@@ -4,8 +4,12 @@ go-clean:
 go-build:
 	go build  -o ./pkg/pigeon ./cli/pigeon
 
+go-generate:
+	go generate  ./cli/pigeon
+
 build:
 	$(MAKE) go-clean
+	$(MAKE) go-generate
 	$(MAKE) go-build
 
 install:

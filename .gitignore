@@ -1,5 +1,7 @@
-pkg
+/pkg
 .idea
 .envrc
-config/application.yml
+/config/application.yml
+!/generated/.keep
+/generated/*
 .config

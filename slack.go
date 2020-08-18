@@ -8,8 +8,8 @@ import (
 )
 
 type Slack struct {
-	url       string
 	message   string
+	url       string
 	channel   string
 	messenger string
 	icon      SlackIcon
@@ -20,10 +20,10 @@ type SlackIcon struct {
 	url   string
 }
 
-func NewSlack(url, message, channel, messenger, iconEmoji, iconUrl string) *Slack {
+func NewSlack(message, url, channel, messenger, iconEmoji, iconUrl string) *Slack {
 	return &Slack{
-		url:       url,
 		message:   message,
+		url:       url,
 		channel:   channel,
 		messenger: messenger,
 		icon:      SlackIcon{emoji: iconEmoji, url: iconUrl},

@@ -1,6 +1,9 @@
+//go:generate pkger -o generated
+
 package main
 
 import (
+	_ "github.com/hachi-n/pigeon/generated"
 	"github.com/urfave/cli/v2"
 	"log"
 	"os"
