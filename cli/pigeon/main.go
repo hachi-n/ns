@@ -11,8 +11,8 @@ import (
 
 func main() {
 	app := &cli.App{
-		Name: "pigeon",
-		Usage: "notification system.",
+		Name:        "pigeon",
+		Usage:       "notification system.",
 		Description: "notification system.",
 		Commands: []*cli.Command{
 			slackCommand(),
